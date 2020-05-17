@@ -1,15 +1,17 @@
 const lost = require('lost')
 const pxtorem = require('postcss-pxtorem')
 
-const url = 'https://lumen.netlify.com'
+const url = 'https://ryuch91.github.io'
 
 module.exports = {
+  pathPrefix: `/devblog`,
+  //assetPrefix: `/devblog`,
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
+    title: 'Dev blog by ryuch91',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      '끊임없이 기록하자',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -27,11 +29,11 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'CK Ryu',
+      email: 'ryuch91@gmail.com',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'https://github.com/ryuch91',
       rss: '#',
       vk: '#',
     },
