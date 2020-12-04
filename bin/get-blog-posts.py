@@ -26,6 +26,7 @@ markdown_pages = {}
 regex_meta = re.compile(r'^== *(\w+) *:* (.+) *$')
 ignore_root = True
 
+# 특정 파일을 받아서 저장하고, 그 이름을 반환해주는 함수
 def download_file(file_url, destination_folder):
     r = requests.get(file_url, stream=True)
     # converts response headers mime type to an extension (may not work with everything)
